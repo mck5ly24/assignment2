@@ -198,3 +198,49 @@ footer a {
   font-weight: bold;
   color: #1d3557;
 }
+
+@media screen and (max-width: 800px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #hero div,
+  #hero figure {
+    width: 100%;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card:first-child {
+    grid-column: span 1;
+  }
+
+  #event-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .related-event-list {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 20px 5%;
+  }
+}
